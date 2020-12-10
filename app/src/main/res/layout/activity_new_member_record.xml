@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewMemberRecord">
+
+    <EditText
+        android:id="@+id/editTextbedno"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/textbox"
+        android:ems="10"
+        android:hint="BED NO"
+        android:textColorHint="#000000"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editTextpatientname"
+        android:layout_width="370dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/textbox"
+        android:ems="10"
+        android:hint="Name"
+        android:textColorHint="#000000"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editTextpatientage"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/textbox"
+        android:ems="10"
+        android:textColorHint="#000000"
+        android:hint="AGE"
+        android:inputType="numberDecimal"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editTextpatientdob"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="140dp"
+        android:textColorHint="#000000"
+        android:background="@drawable/textbox"
+        android:ems="10"
+        android:hint="D.O.B"
+        android:inputType="date"
+        android:textAlignment="center" />
+
+    <Spinner
+        android:id="@+id/patientgender"
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="200dp"
+        android:entries="@array/Gender"
+        android:background="@color/colorAccent" />
+
+    <Spinner
+        android:id="@+id/patientbloodgrp"
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="215dp"
+        android:entries="@array/BLOODGROUP"
+        android:layout_marginTop="200dp"
+        android:background="@color/colorAccent" />
+
+    <EditText
+        android:id="@+id/editTextpatientphone"
+        android:layout_width="380dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/textbox"
+        android:ems="10"
+        android:textColorHint="#000000"
+        android:hint="Enter Phone Number"
+        android:inputType="phone"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editTextpatientaddress"
+        android:layout_width="380dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/textbox"
+        android:textColorHint="#000000"
+        android:ems="10"
+        android:hint="Enter your Address"
+        android:inputType="textPostalAddress"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editTextpatientheartrate"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="360dp"
+        android:background="@drawable/textbox"
+        android:ems="10"
+        android:textColorHint="#000000"
+        android:hint="HEART RATE"
+        android:inputType="numberDecimal"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editTextpatientbp"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="360dp"
+        android:textColorHint="#000000"
+        android:background="@drawable/textbox"
+        android:ems="10"
+        android:hint="BP"
+        android:inputType="date"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editTextpatientrespirate"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="420dp"
+        android:background="@drawable/textbox"
+        android:ems="10"
+        android:textColorHint="#000000"
+        android:hint="TEMPERATURE"
+        android:inputType="numberDecimal"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editTextpatienttemp"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="420dp"
+        android:textColorHint="#000000"
+        android:background="@drawable/textbox"
+        android:ems="10"
+        android:hint="RESPIRATE RATE"
+        android:inputType="date"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editTextpatientivname"
+        android:layout_width="380dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="480dp"
+        android:background="@drawable/textbox"
+        android:textColorHint="#000000"
+        android:ems="10"
+        android:hint="IV NAME"
+        android:inputType="textPostalAddress"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editTextpatientivfinalvalue"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="540dp"
+        android:background="@drawable/textbox"
+        android:ems="10"
+        android:textColorHint="#000000"
+        android:hint="IV FINAL VALUE"
+        android:inputType="numberDecimal"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editTextpatientcurrentivml"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="540dp"
+        android:textColorHint="#000000"
+        android:background="@drawable/textbox"
+        android:ems="10"
+        android:hint="CurrentIV"
+        android:inputType="date"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editTextpatientmedcond"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="600dp"
+        android:background="@drawable/textbox"
+        android:textColorHint="#000000"
+        android:ems="10"
+        android:hint="MEDICAL CONDITION"
+        android:inputType="textPostalAddress"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/fixtheappointer"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="670dp"
+        android:background="@color/pinky"
+        android:gravity="center"
+        android:text="ADD THE PATIENT" />
+
+
+</RelativeLayout>

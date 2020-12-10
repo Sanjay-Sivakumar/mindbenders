@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "178370620970",
+    "firebase_url": "https://mindbenders-8d230.firebaseio.com",
+    "project_id": "mindbenders-8d230",
+    "storage_bucket": "mindbenders-8d230.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:178370620970:android:3d14501cfb4685e3381d53",
+        "android_client_info": {
+          "package_name": "com.example.mindbenders"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "178370620970-bb4fhkkl4qaskfsgfsb5copj49apkhdl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mindbenders",
+            "certificate_hash": "458713f1cc451416d2514ec6239b3555e5cce3c3"
+          }
+        },
+        {
+          "client_id": "178370620970-blejr4litt63ehcjsunmv2pm7113ok69.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeGbyps82j4p9MQSp2Cf3w1q016kIxDCg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "178370620970-blejr4litt63ehcjsunmv2pm7113ok69.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

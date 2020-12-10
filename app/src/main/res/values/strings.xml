@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">MindBenders</string>
+
+    <array name="BLOODGROUP">
+        <item>A+ve</item>
+        <item>B+ve</item>
+        <item>O+ve</item>
+        <item>AB+ve</item>
+        <item>AB-ve</item>
+        <item>A+veB-ve</item>
+        <item>A-veB+ve</item>
+        <item>A-ve</item>
+        <item>B-ve</item>
+        <item>O-ve</item>
+        <item>OTHERS</item>
+    </array>
+    <array name="Gender">
+        <item>MALE</item>
+        <item>FEMALE</item>
+        <item>OTHERS</item>
+    </array>
+
+
+</resources>
