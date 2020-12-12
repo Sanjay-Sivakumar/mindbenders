@@ -8,31 +8,41 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button newrecpage,iventerpage,patientdetail;
+    Button dashboard,ivchecker,current;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        newrecpage=(Button)findViewById(R.id.btntonewmem);
-        iventerpage=(Button)findViewById(R.id.btntoiveenter);
+        dashboard=(Button)findViewById(R.id.btndashboard);
+        ivchecker=(Button)findViewById(R.id.btnivcheck);
+        current=(Button)findViewById(R.id.btncurrent);
 
-        newrecpage.setOnClickListener(new View.OnClickListener() {
+        dashboard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(MainActivity.this, AdminLoginPage.class));
+                startActivity(new Intent(MainActivity.this, DashboardPage.class));
             }
         });
 
-        iventerpage.setOnClickListener(new View.OnClickListener() {
+        ivchecker.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 startActivity(new Intent(MainActivity.this, IvCheckingPage.class));
             }
         });
+
+        current.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(MainActivity.this, CurrentCondition.class));
+            }
+        });
+
 
     }
 }

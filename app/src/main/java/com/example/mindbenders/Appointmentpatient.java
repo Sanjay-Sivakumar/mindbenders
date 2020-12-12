@@ -13,12 +13,12 @@ public class Appointmentpatient {
     private String patientaddress,patientbloodgrp,patientgender;
     private String patientheartrate,patientbp;
     private  String patienttemperature;
-    private  String patientrespirationrate,patientivname,patientivfinalvalue,patientcurrentiv,patientmedicalcondition;
+    private  String patientrespirationrate,patientmedicalcondition;
     public Appointmentpatient(){
         //this constructor is required
     }
 
-    public Appointmentpatient(String patientid, String patientname, String patientage, String patientdob, String patientphone, String patientaddress, String patientbloodgrp, String patientgender, String patientheartrate, String patientbp, String patienttemperature, String patientrespirationrate, String patientivname, String patientivfinalvalue, String patientcurrentiv, String patientmedicalcondition) {
+    public Appointmentpatient(String patientid, String patientname, String patientage, String patientdob, String patientphone, String patientaddress, String patientbloodgrp, String patientgender, String patientheartrate, String patientbp, String patienttemperature, String patientrespirationrate, String patientmedicalcondition) {
         this.patientid = patientid;
         this.patientname = patientname;
         this.patientage = patientage;
@@ -31,9 +31,6 @@ public class Appointmentpatient {
         this.patientbp = patientbp;
         this.patienttemperature = patienttemperature;
         this.patientrespirationrate = patientrespirationrate;
-        this.patientivname = patientivname;
-        this.patientivfinalvalue = patientivfinalvalue;
-        this.patientcurrentiv = patientcurrentiv;
         this.patientmedicalcondition = patientmedicalcondition;
     }
 
@@ -85,17 +82,6 @@ public class Appointmentpatient {
         return patientrespirationrate;
     }
 
-    public String getPatientivname() {
-        return patientivname;
-    }
-
-    public String getPatientivfinalvalue() {
-        return patientivfinalvalue;
-    }
-
-    public String getPatientcurrentiv() {
-        return patientcurrentiv;
-    }
 
     public String getPatientmedicalcondition() {
         return patientmedicalcondition;

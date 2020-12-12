@@ -25,7 +25,7 @@ import java.util.List;
 public class IvCheckingPage extends AppCompatActivity {
 
     DatabaseReference databaseivrecord;
-    Appointmentpatient member;
+    Appointmentpatient1 member;
     int ids=0;
    // EditText number;
     Button stopplaying,startplaying;
@@ -35,7 +35,7 @@ public class IvCheckingPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_iv_checking_page);
 
-        member = new Appointmentpatient();
+        member = new Appointmentpatient1();
         databaseivrecord= FirebaseDatabase.getInstance().getReference("Patient");
 
         Toast.makeText(IvCheckingPage.this,"NO Values",Toast.LENGTH_LONG).show();
@@ -51,10 +51,10 @@ public class IvCheckingPage extends AppCompatActivity {
                 List<String> keys = new ArrayList<>();
                 for(DataSnapshot keynode : dataSnapshot.getChildren()){
                     keys.add(keynode.getKey());
-                    Appointmentpatient member = keynode.getValue(Appointmentpatient.class);
+                    Appointmentpatient1 member = keynode.getValue(Appointmentpatient1.class);
 
-                    String num = member.getPatienttemperature().toString();
-                    String num1= member.getPatientivfinalvalue().toString();
+                    String num = member.getPatientcurrentiv();
+                    String num1= member.getPatientivfinalvalue();
 
                     try
                     {
@@ -62,7 +62,7 @@ public class IvCheckingPage extends AppCompatActivity {
                         int numbers1=Integer.parseInt(num1);
                         if(numbers > numbers1)
                         {
-                            notification(member.getPatientid().toString(), member.getPatientname().toString(), member.getPatienttemperature().toString());
+                            notification(member.getPatientid().toString(), member.getPatientmedicondition().toString(), member.getPatientcurrentiv().toString());
                             Toast.makeText(IvCheckingPage.this,"value update aaiduchu",Toast.LENGTH_LONG).show();
                         }
                     }

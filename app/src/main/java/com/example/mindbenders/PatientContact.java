@@ -25,7 +25,7 @@ public class PatientContact extends AppCompatActivity {
         setContentView(R.layout.activity_patient_contact);
 
 
-        databaseBustime = FirebaseDatabase.getInstance().getReference("Patient");
+        databaseBustime = FirebaseDatabase.getInstance().getReference("PatientContactDetails");
         listViewBusestime = (ListView) findViewById(R.id.listViewappoints);
 
         busestime = new ArrayList<>();

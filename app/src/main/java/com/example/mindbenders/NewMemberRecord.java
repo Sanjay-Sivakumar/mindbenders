@@ -18,7 +18,7 @@ import java.util.List;
 public class NewMemberRecord extends AppCompatActivity {
 
     EditText patientname,patientage,patientdob,patientphone,patientaddress,patientheartrate,patientbp,patienttemperature,patientrepirationrate;
-    EditText patientivname,patientivfinalvalue,patientcurrentiv,patientmedicalcond,patientbedno;
+    EditText patientmedicalcond,patientbedno;
     Spinner patientbloodgrp,patientgender;
     Button addnewpatientdetails;
     List<Appointmentpatient> appointment;
@@ -40,15 +40,12 @@ public class NewMemberRecord extends AppCompatActivity {
         patientbp = (EditText) findViewById(R.id.editTextpatientbp);
         patienttemperature = (EditText) findViewById(R.id.editTextpatienttemp);
         patientrepirationrate = (EditText) findViewById(R.id.editTextpatientrespirate);
-        patientivname = (EditText) findViewById(R.id.editTextpatientivname);
-        patientivfinalvalue = (EditText) findViewById(R.id.editTextpatientivfinalvalue);
-        patientcurrentiv = (EditText) findViewById(R.id.editTextpatientcurrentivml);
         patientmedicalcond = (EditText) findViewById(R.id.editTextpatientmedcond);
         patientbloodgrp = (Spinner) findViewById(R.id.patientbloodgrp);
         patientgender =(Spinner) findViewById(R.id.patientgender);
         addnewpatientdetails = (Button) findViewById(R.id.fixtheappointer);
 
-        databasepatient = FirebaseDatabase.getInstance().getReference("Patient");
+        databasepatient = FirebaseDatabase.getInstance().getReference("PatientContactDetails");
 
         appointment = new ArrayList<>();
 
@@ -73,9 +70,6 @@ public class NewMemberRecord extends AppCompatActivity {
         String bp = patientbp.getText().toString().trim();
         String temperature = patienttemperature.getText().toString().trim();
         String respirationrate = patientrepirationrate.getText().toString().trim();
-        String ivname = patientivname.getText().toString().trim();
-        String ivfinalvalue = patientivfinalvalue.getText().toString().trim();
-        String currentiv = patientcurrentiv.getText().toString().trim();
         String medicalcondition = patientmedicalcond.getText().toString().trim();
         String gender = patientgender.getSelectedItem().toString();
         String bloodgrp = patientbloodgrp.getSelectedItem().toString();
@@ -85,7 +79,7 @@ public class NewMemberRecord extends AppCompatActivity {
 
 
             //creating an name Object
-            Appointmentpatient appointmentpatient = new Appointmentpatient(bedno,name,age,Dob,phone,address,bloodgrp,gender,heartrate,bp,temperature,respirationrate,ivname,ivfinalvalue,currentiv,medicalcondition);
+            Appointmentpatient appointmentpatient = new Appointmentpatient(bedno,name,age,Dob,phone,address,bloodgrp,gender,heartrate,bp,temperature,respirationrate,medicalcondition);
 
             databasepatient.child(bedno).setValue(appointmentpatient);
             //setting edittext to blank again
@@ -95,10 +89,8 @@ public class NewMemberRecord extends AppCompatActivity {
             patientphone.setText("");
             patientaddress.setText("");
             patientmedicalcond.setText("");
-            patientcurrentiv.setText("");
+
             patientrepirationrate.setText("");
-            patientivname.setText("");
-            patientivfinalvalue.setText("");
             patienttemperature.setText("");
             patientheartrate.setText("");
             patientbp.setText("");
