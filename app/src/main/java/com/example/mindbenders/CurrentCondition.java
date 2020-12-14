@@ -18,7 +18,6 @@ import java.util.List;
 public class CurrentCondition extends AppCompatActivity {
 
     EditText patientbednochange,patientivnamechange,patientivfinalvaluechange,patientivcurrentvaluechange,patientmedichange;
-
     Button changesinthebottles;
     List<Appointmentpatient1> appointment1;
     DatabaseReference databasepatient1;

@@ -4,12 +4,21 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/doclogo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".GeneralWard"></activity>
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>>
+        <activity android:name=".AboutUs" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".CurrentCondition" />
         <activity android:name=".PatientContact" />
         <activity android:name=".IvCheckingPage" />
@@ -18,11 +27,6 @@
         <activity android:name=".NewMemberRecord" />
         <activity android:name=".OtpVerificationPage" />
         <activity android:name=".LoginPage">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

@@ -59,7 +59,6 @@ public class AdminLoginPage extends AppCompatActivity {
                 if(task.isSuccessful()){
                     progressDialog.dismiss();
                     Toast.makeText(AdminLoginPage.this, "Login Successful", Toast.LENGTH_SHORT).show();
-                    System.out.print("Login Successful");
                     startActivity(new Intent(AdminLoginPage.this, DashboardPage.class));
                 }else{
                     Toast.makeText(AdminLoginPage.this, "Login Failed", Toast.LENGTH_SHORT).show();
