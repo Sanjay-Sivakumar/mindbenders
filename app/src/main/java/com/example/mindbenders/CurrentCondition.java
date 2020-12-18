@@ -36,9 +36,11 @@ public class CurrentCondition extends AppCompatActivity {
         changesinthebottles = (Button) findViewById(R.id.changethebottle);
         patientmedichange=(EditText)findViewById(R.id.editTextpatientmedcondchanged);
 
+
         databasepatient1 = FirebaseDatabase.getInstance().getReference("Patient");
 
         appointment1 = new ArrayList<>();
+
 
         changesinthebottles.setOnClickListener(new View.OnClickListener() {
             @Override
