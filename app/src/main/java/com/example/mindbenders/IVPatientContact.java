@@ -43,7 +43,7 @@ public class IVPatientContact extends AppCompatActivity {
                     Appointmentpatient1 busno2 = postSnapshot.getValue(Appointmentpatient1.class);
                     busestime2.add(busno2);
                 }
-                Appointmentpatientlist1 BustimeAdapter2 = new Appointmentpatientlist1(IVPatientContact.this, busestime2);
+                Appointmentpatientlist1 BustimeAdapter2 = new Appointmentpatientlist1(IVPatientContact.this,busestime2);
                 listViewBusestime2.setAdapter(BustimeAdapter2);
             }
 
